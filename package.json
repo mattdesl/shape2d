@@ -1,0 +1,18 @@
+{
+  "name": "shape2d",
+  "version": "0.0.0",
+  "description": "Turns lineTo, moveTo, quadratic & bezier curves into discrete Vector2 points",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "",
+  "license": "BSD-2-Clause",
+  "devDependencies": {
+  },
+  "dependencies": {
+    "klasse": "~1.0.6",
+    "interpolation": "0.0.0",
+    "vecmath": "0.0.3"
+  }
+}
