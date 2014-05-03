@@ -6,12 +6,33 @@
   "scripts": {
     "test": "echo \"Error: no test specified\" && exit 1"
   },
-  "author": "",
+  "author": "Matt DesLauriers",
   "license": "BSD-2-Clause",
   "devDependencies": {},
   "dependencies": {
     "interpolation": "0.0.0",
     "klasse": "^1.0.8",
     "vecmath": "^0.1.0"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/mattdesl/shape2d.git"
+  },
+  "keywords": [
+    "shapes",
+    "shape",
+    "2d",
+    "polygon",
+    "path",
+    "cubic",
+    "bezier",
+    "quadratic",
+    "moveTo",
+    "lineTo",
+    "curve"
+  ],
+  "bugs": {
+    "url": "https://github.com/mattdesl/shape2d/issues"
+  },
+  "homepage": "https://github.com/mattdesl/shape2d"
 }
