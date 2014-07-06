@@ -90,10 +90,10 @@ var Shape = new Class({
     set for this Path object. It will be capped to a minimum of 3 steps. 
     */
     bezierCurveTo: function(x2, y2, x3, y3, x4, y4, steps) {
-        //if we are calling lineTo before any moveTo.. make this the first point
+        //if we are calling bezierCurveTo before any moveTo.. the control point takes the lead
+        //this is how it works with HTML5 canvas context
         if (!this._hasMoved) {
-            this.moveTo(x, y);
-            return;
+            this.moveTo(x2, y2);
         }
         
         var x1 = this._move.x;
@@ -137,10 +137,9 @@ var Shape = new Class({
     set for this Path object. It will be capped to a minimum of 3 steps. 
     */
     quadraticCurveTo: function(x2, y2, x3, y3, steps) {
-        //if we are calling lineTo before any moveTo.. make this the first point
+        //parity with HTML5 canvas context, just move to first control point
         if (!this._hasMoved) {
-            this.moveTo(x, y);
-            return;
+            this.moveTo(x2, y2);
         } 
         
         var x1 = this._move.x;
