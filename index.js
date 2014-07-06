@@ -1,4 +1,4 @@
-var Vector2 = require('vecmath').Vector2;
+var Vector2 = require('vecmath/lib/Vector2');
 var Class = require('klasse');
 var lerp = require('interpolation').lerp;
 
