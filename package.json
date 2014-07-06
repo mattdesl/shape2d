@@ -10,7 +10,7 @@
   "license": "BSD-2-Clause",
   "devDependencies": {},
   "dependencies": {
-    "interpolation": "0.0.0",
+    "interpolation": "0.0.1",
     "klasse": "^1.0.8",
     "vecmath": "^0.1.0"
   },
